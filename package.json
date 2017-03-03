@@ -1,0 +1,29 @@
+{
+  "name": "angular-to-do",
+  "version": "1.0.0",
+  "description": "angular to-do list",
+  "main": "server.js",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.17.0",
+    "bulma": "^0.3.2",
+    "express": "^4.15.0",
+    "mongoose": "^4.8.5",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdotchin/angular-to-do.git"
+  },
+  "author": "Richard Dotchin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdotchin/angular-to-do/issues"
+  },
+  "homepage": "https://github.com/rdotchin/angular-to-do#readme"
+}
