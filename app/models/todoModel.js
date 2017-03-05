@@ -7,3 +7,9 @@ var ToDoSchema = Schema({
     todo: String,
     completeBy: Date
 });
+
+// Create the model
+const ToDo = mongoose.model("ToDo", ToDoSchema);
+
+//export the model
+module.exports = ToDo;

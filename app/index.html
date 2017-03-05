@@ -4,31 +4,91 @@
     <base href="/" />
     <meta charset="UTF-8">
     <title>Angular To-Do-List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="fragment" content="!">
     <!--BULMA CSS FILES-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.css.map">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css.map">
     <!--CSS FILE-->
-    <link rel="stylesheet" href="todo/layout/assets/styles/layout.css">
+    <link rel="stylesheet" href="toDoList/layout/assets/styles/layout.css">
     <!--Angular JS library-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <!--Angular UI-Router library-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 </head>
-<body>
+
+<body ng-app="toDoList">
+<nav class="nav">
+    <div class="nav-left">
+        <a class="nav-item">
+            <img src="https://angular.io/resources/images/logos/angular2/angular.png" alt="Angular logo"><b>ngular to-do list</b>
+        </a>
+    </div>
+
+    <div class="nav-center">
+        <a class="nav-item">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+        </a>
+        <a class="nav-item">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+        </a>
+    </div>
+
+
+    </div>
+</nav>
+
+    <div class="tabs is-centered is-boxed">
+        <ul>
+            <li class="is-active">
+                <a ui-sref="list">
+                    <span class="icon is-small"><i class="fa fa-image"></i></span>
+                    <span>List</span>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="completed">
+                    <span class="icon is-small"><i class="fa fa-music"></i></span>
+                    <span>Completed</span>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="create">
+                    <span class="icon is-small"><i class="fa fa-film"></i></span>
+                    <span>Create</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
 
     <ui-view></ui-view>
 
+
+
+
+
     <!--TO-DO MODULE FILE-->
-    <script src="todo/features/todo.module.js"></script>
+    <script src="toDoList/toDoList.module.js"></script>
 
     <!--COMPONENTS JS FILES-->
 
     <!--LIST JS FILES-->
-
+    <script src="toDoList/features/list/list.module.js"></script>
+    <script src="toDoList/features/list/list.controller.js"></script>
+    <script src="toDoList/features/list/list.route.js"></script>
     <!--CREATE JS FILES-->
-
+    <script src="toDoList/features/create/create.module.js"></script>
+    <script src="toDoList/features/create/create.controller.js"></script>
+    <script src="toDoList/features/create/create.route.js"></script>
     <!--COMPLETED JS FILES-->
 
 </body>
