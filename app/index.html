@@ -9,89 +9,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="fragment" content="!">
     <script src="https://use.fontawesome.com/f984395f12.js"></script>
-    <!--BULMA CSS FILES-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.css.map">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css.map">
+
     <!--CSS FILE-->
     <link rel="stylesheet" href="toDoList/layout/assets/styles/layout.css">
-    <!--Angular JS library-->
+    <!-- Roboto Font for Angular-Material -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+   <!--CSS FILE-->
+    <link rel="stylesheet" href="toDoList/layout/assets/styles/layout.css">
+   <!-- ANGULAR & UI-ROUTER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-    <!--Angular UI-Router library-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <!-- Angular-Material & Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.3.2/svg-morpheus.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-messages.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.3/angular-material.min.js"></script>
 </head>
 
 <body ng-app="toDoList">
-
-    <!--NAV BAR CONTAINING LOGO AND GITHUB LINK-->
-    <nav class="nav">
-        <div class="nav-left">
-            <a class="nav-item">
-                <!--logo-->
-                <img src="https://angular.io/resources/images/logos/angular2/angular.png" alt="Angular logo"><b>ngular to-do list</b>
-            </a>
-        </div>
-
-        <!--GITHUB LINK-->
-        <div class="nav-center">
-            <a class="nav-item" target="_blank" href="https://github.com/rdotchin">
-                <span class="icon">
-                    <i class="fa fa-github"></i>
-                </span>
-            </a>
-        </div>
-    </nav> <!--END OF NAV BAR-->
-
-    <!--LIST/CREATE/COMPLETE TABS-->
-    <div class="tabs is-centered is-boxed">
-        <ul>
-            <!--LIST TAB-->
-            <li class="is-active">
-                <a ui-sref="list">
-                    <span class="icon is-small">
-                        <i class="fa fa-list-alt"></i>
-                    </span>
-                    <span>List</span>
-                </a>
-            </li>
-            <!--CREATE TAB-->
-            <li>
-                <a ui-sref="create">
-                    <span class="icon is-small">
-                        <i class="fa fa-plus-square-o"></i>
-                    </span>
-                    <span>Create</span>
-                </a>
-            </li>
-            <!--COMPLETE TAB-->
-            <li>
-                <a ui-sref="completed">
-                    <span class="icon is-small">
-                        <i class="fa fa-check-square-o"></i>
-                    </span>
-                    <span>Completed</span>
-                </a>
-            </li>
-
-        </ul>
-    </div> <!--END OF LIST/CREATE/COMPLETE TABS-->
-
-    <div class="container">
+    
+    <!-- List/Create/Completed tabs -->
+    <tabs></tabs>
     <!--UI-VIEW FOR ANGULAR CONTENT-->
     <ui-view></ui-view>
-
-    </div>
-
-
-
-
 
     <!--TO-DO MODULE FILE-->
     <script src="toDoList/toDoList.module.js"></script>
 
     <!--COMPONENTS JS FILES-->
-
+            <!-- TABS -->
+    <script src="toDoList/features/components/tabs/tabs.module.js"></script>
+    <script src="toDoList/features/components/tabs/tabs.directive.js"></script>
     <!--LIST JS FILES-->
     <script src="toDoList/features/list/list.module.js"></script>
     <script src="toDoList/features/list/list.controller.js"></script>

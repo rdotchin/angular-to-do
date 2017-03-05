@@ -2,10 +2,12 @@ angular
     .module('toDoList', [
         // Global Dependencies
         'ui.router',
+        'ngMaterial', //Angular Material
         //features
         'toDoList.create',
         'toDoList.list',
-        'toDoList.completed'
+        'toDoList.completed',
+        'toDoList.component.tabs'
     ])
     .config(toDoListConfig);
 

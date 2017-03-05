@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 //create schema for
 var ToDoSchema = Schema({
-    todo: String,
+    todoText: String,
     completeBy: Date
 });
 

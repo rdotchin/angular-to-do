@@ -1,0 +1,1 @@
+angular.module('toDoList.component.tabs', []); // ngMaterial is for 
