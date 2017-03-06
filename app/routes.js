@@ -9,7 +9,7 @@ mongoose.Promise = Promise;
 
 module.exports = function(app){
     // FIND ALL TODOS
-    app.get('/api/todos', function(req, res){
+    app.get('/api/todo', function(req, res){
         ToDo.find({}, function(err, data){ // Find all todos
             if (err) return handleError(err); // If error
             res.send('index.html')
@@ -25,15 +25,14 @@ module.exports = function(app){
     //CREATE TODOS
     app.post('/api/todo', function(req, res){
         var newToDo = new ToDo({
-            todo: req.body, //content
-            completeBy: req.body //date
+            todoText: req.body.todoText, //content
+            completeBy: req.body.completeBy //date
         });
 
         newToDo.save(function(err){
             if (err) return handleError(err);
-            res.redirect('/create'); //redirect?
         });
 
-    })
+    });
 
 };

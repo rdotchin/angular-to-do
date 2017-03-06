@@ -13,11 +13,13 @@
         <div layout-gt-xs="row">
             <div flex-gt-xs>
                 <h4>Enter complete by date:</h4>
-                <md-datepicker ng-model="ctrl.completeBy" md-placeholder="Enter date"></md-datepicker>
+                <!-- Datepicker set to  -->
+                <md-datepicker ng-model="CreateVM.todo.completeBy" md-placeholder="Enter date"></md-datepicker>
             </div>
         </div>
     </md-content>
     <div>
+
         <md-button class="md-raised md-primary" type="button" value="Save" ng-click="CreateVM.addTodo()">Submit</md-button>
       </div>
 
