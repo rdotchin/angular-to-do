@@ -32,9 +32,9 @@ module.exports = function(app){
             completeBy: req.body.completeBy //date
         });
 
-        newToDo.save(function(err){
+        newToDo.save(function(err, newTodo){
             if (err) return handleError(err);
-            return res.status(500);
+            res.send(200); //respond with a 200(ok) status code
         });
 
     });

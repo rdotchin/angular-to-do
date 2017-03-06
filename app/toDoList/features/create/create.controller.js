@@ -5,21 +5,18 @@ angular
 function CreateCtrl($http){
 	var vm = this; // vm stands for View Model - anything on "the vm" is exposed to the view
 
-	//reset the text input and Datepicker to blank 
-	vm.resetView = function(){
+	//reset the text input and Datepicker 
+	function resetView(){
   		vm.todo = {
   			todoText: '',
   			completeBy: ''
   		};	
-  	};
+  	}
 	
-
 	
   	/*This function will run the $http post to send todo data to the server
   	app.post('/api/todo') will use the data to add the todo to mongodb. */
 	vm.addTodo = function(){
-
-
 		$http({
 		method: 'POST',
 		url: '/api/todo',
@@ -28,10 +25,10 @@ function CreateCtrl($http){
 			completeBy: vm.todo.completeBy // date selected data
 		}
 		}).then(function(response){
-			/*PROMISE IS NOT WORKING!!!!*/
-			console.log('PO$T');
-			/*console.log(response);*/
-			
+			console.log('new todo created'); // console.log on success
+			resetView(); //reset text input and Datepicker
+		}).catch(function(err){ //catch if an error
+			console.log(err);
 		});
 	};
 }

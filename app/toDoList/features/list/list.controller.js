@@ -25,5 +25,5 @@ function ListCtrl($http){
 
 	var updateTodo = function(){
 
-	}
+	};
 }
