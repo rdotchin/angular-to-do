@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22601196-afa9-4580-bfea-0c2ebf1dc69f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="22601196-afa9-4580-bfea-0c2ebf1dc69f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="completed.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.html">
+      <file leaf-file-name="create.route.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/toDoList/features/create/create.route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="261">
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -59,10 +57,10 @@
         <option value="$PROJECT_DIR$/app/toDoList/features/list/list.html" />
         <option value="$PROJECT_DIR$/app/toDoList/features/create/create.html" />
         <option value="$PROJECT_DIR$/app/toDoList/features/completed/completed.controller.js" />
-        <option value="$PROJECT_DIR$/app/toDoList/features/completed/completed.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/toDoList/features/completed/completed.route.js" />
         <option value="$PROJECT_DIR$/app/toDoList/toDoList.module.js" />
+        <option value="$PROJECT_DIR$/app/toDoList/features/completed/completed.html" />
       </list>
     </option>
   </component>
@@ -100,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -167,9 +164,92 @@
               <option name="myItemId" value="features" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="list" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toDoList" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="create" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toDoList" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tabs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toDoList" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,17 +349,18 @@
       <updated>1488564529708</updated>
       <workItem from="1488564531098" duration="8451000" />
       <workItem from="1488679828562" duration="8650000" />
+      <workItem from="1488764451374" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17101000" />
+    <option name="totallyTimeSpent" value="17153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="127" y="22" width="1665" height="1028" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25939617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2624769" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -313,29 +394,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <marker date="1488689477000" expanded="true" signature="31:4005" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="38:1280" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1306:3997" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1380:1935" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1411:1638" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1444:1623" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1699:1924" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1783:1909" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1819:1892" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2039:2994" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2052:2983" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2115:2359" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2150:2341" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2199:2282" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2406:2659" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2443:2641" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2492:2580" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2708:2968" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2748:2950" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2797:2886" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="3063:3138" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -344,13 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1488573890000" expanded="true" signature="0:731" ph="{&quot;name&quot;: &quot;angular-to-do&quot;...}" />
-            <marker date="1488573890000" expanded="true" signature="131:323" ph="{&quot;bluebird&quot;: &quot;^3.4.7&quot;...}" />
-            <marker date="1488573890000" expanded="true" signature="363:428" ph="{&quot;test&quot;: &quot;node server.js&quot;...}" />
-            <marker date="1488573890000" expanded="true" signature="446:533" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-            <marker date="1488573890000" expanded="true" signature="596:663" ph="{&quot;url&quot;: &quot;https://github.com/rdotchin/angular-to-do/issues&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -358,9 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <marker date="1488568678000" expanded="true" signature="477:519" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -368,6 +417,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/list/list.route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1488681725000" expanded="true" signature="125:293" ph="{&quot;name&quot;: 'list'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/create/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/toDoList.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -381,61 +505,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/list/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/toDoList/features/list/list.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
-            <marker date="1488680046000" expanded="true" signature="37:45" ph="[...]" />
+            <marker date="1488750026000" expanded="true" signature="37:50" ph="[...]" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1488681429000" expanded="true" signature="816:859" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.js">
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/components/tabs/tabs.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488574121000" expanded="true" signature="367:1098" ph="{...}" />
-            <marker date="1488574121000" expanded="true" signature="435:672" ph="{...}" />
-            <marker date="1488574121000" expanded="true" signature="478:664" ph="{...}" />
-            <marker date="1488574121000" expanded="true" signature="603:621" ph="/*...*/" />
-            <marker date="1488574121000" expanded="true" signature="744:752" ph="{...}" />
-            <marker date="1488574121000" expanded="true" signature="819:1094" ph="{...}" />
-            <marker date="1488574121000" expanded="true" signature="852:941" ph="{&quot;todo&quot;: req.body...}" />
-            <marker date="1488574121000" expanded="true" signature="979:1085" ph="{...}" />
+            <marker date="1488749395000" expanded="true" signature="87:510" ph="{...}" />
+            <marker date="1488749395000" expanded="true" signature="97:507" ph="{&quot;restrict&quot;: 'E'...}" />
+            <marker date="1488749395000" expanded="true" signature="170:193" ph="{&quot;tabsData&quot;: '='...}" />
+            <marker date="1488749395000" expanded="true" signature="532:551" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/list/list.route.js">
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/components/tabs/tabs.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <marker date="1488681725000" expanded="true" signature="98:296" ph="{...}" />
-            <marker date="1488681725000" expanded="true" signature="125:293" ph="{&quot;name&quot;: 'list'...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/create/create.route.js">
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/create/create.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="-323">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1488682075000" expanded="true" signature="171:466" ph="{...}" />
-            <marker date="1488682075000" expanded="true" signature="278:462" ph="{&quot;name&quot;: 'create'...}" />
+            <marker date="1488764115000" expanded="true" signature="154:872" ph="{...}" />
+            <marker date="1488764115000" expanded="true" signature="322:391" ph="{...}" />
+            <marker date="1488764115000" expanded="true" signature="338:384" ph="{&quot;todoText&quot;: ''...}" />
+            <marker date="1488764115000" expanded="true" signature="400:545" ph="/*...*/" />
+            <marker date="1488764115000" expanded="true" signature="570:869" ph="{...}" />
+            <marker date="1488764115000" expanded="true" signature="580:742" ph="{&quot;method&quot;: 'POST'...}" />
+            <marker date="1488764115000" expanded="true" signature="628:738" ph="{&quot;todoText&quot;: vm.todo.todoText...}" />
+            <marker date="1488764115000" expanded="true" signature="767:864" ph="{...}" />
+            <marker date="1488764115000" expanded="true" signature="772:802" ph="/*...*/" />
+            <marker date="1488764115000" expanded="true" signature="830:856" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -445,120 +568,16 @@
         <state relative-caret-position="87">
           <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
           <folding>
-            <marker date="1488568484000" expanded="true" signature="87:109" ph="[...]" />
+            <marker date="1488750342000" expanded="true" signature="87:152" ph="[...]" />
+            <marker date="1488750342000" expanded="true" signature="103:150" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/list/list.html">
+    <entry file="file://$PROJECT_DIR$/app/toDoList/features/create/create.route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/create/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <marker date="1488688218000" expanded="true" signature="68:136" ph="..." />
-            <marker date="1488688218000" expanded="true" signature="159:517" ph="..." />
-            <marker date="1488688218000" expanded="true" signature="169:346" ph="..." />
-            <marker date="1488688218000" expanded="true" signature="229:335" ph="..." />
-            <marker date="1488688218000" expanded="true" signature="384:509" ph="..." />
-            <marker date="1488688218000" expanded="true" signature="398:498" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/create/create.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1488571773000" expanded="true" signature="149:155" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1488689427000" expanded="true" signature="116:120" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1488684814000" expanded="true" signature="42:50" ph="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
-          <folding>
-            <marker date="1488689477000" expanded="true" signature="31:4005" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="38:1280" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1306:3997" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1380:1935" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1411:1638" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1444:1623" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1699:1924" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1783:1909" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="1819:1892" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2039:2994" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2052:2983" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2115:2359" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2150:2341" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2199:2282" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2406:2659" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2443:2641" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2492:2580" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2708:2968" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2748:2950" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="2797:2886" ph="..." />
-            <marker date="1488689477000" expanded="true" signature="3063:3138" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <marker date="1488689555000" expanded="true" signature="113:537" ph="{...}" />
-            <marker date="1488689555000" expanded="true" signature="140:532" ph="{&quot;name&quot;: 'completed'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/toDoList.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <marker date="1488689578000" expanded="true" signature="32:191" ph="[...]" />
-            <marker date="1488689578000" expanded="true" signature="267:400" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/toDoList/features/completed/completed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        <state relative-caret-position="261">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
