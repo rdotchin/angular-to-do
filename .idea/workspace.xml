@@ -75,10 +75,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="127" />
     <option name="y" value="22" />
     <option name="width" value="1665" />
-    <option name="height" value="1028" />
+    <option name="height" value="996" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -192,6 +191,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="create" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-to-do" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toDoList" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,15 +374,15 @@
       <updated>1488564529708</updated>
       <workItem from="1488564531098" duration="8451000" />
       <workItem from="1488679828562" duration="8650000" />
-      <workItem from="1488764451374" duration="52000" />
+      <workItem from="1488764451374" duration="539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17153000" />
+    <option name="totallyTimeSpent" value="17640000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="22" width="1665" height="1028" extended-state="0" />
+    <frame x="0" y="22" width="1665" height="996" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2624769" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -366,7 +391,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35394457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36644593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -500,7 +525,7 @@
         <state relative-caret-position="145">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
-            <marker date="1488680434000" expanded="true" signature="96:118" ph="{...}" />
+            <marker date="1488775586000" expanded="true" signature="417:420" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -518,7 +543,7 @@
         <state relative-caret-position="87">
           <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
-            <marker date="1488750026000" expanded="true" signature="37:50" ph="[...]" />
+            <marker date="1488766439000" expanded="true" signature="37:79" ph="[...]" />
           </folding>
         </state>
       </provider>
@@ -549,16 +574,16 @@
         <state relative-caret-position="-323">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1488764115000" expanded="true" signature="154:872" ph="{...}" />
-            <marker date="1488764115000" expanded="true" signature="322:391" ph="{...}" />
-            <marker date="1488764115000" expanded="true" signature="338:384" ph="{&quot;todoText&quot;: ''...}" />
-            <marker date="1488764115000" expanded="true" signature="400:545" ph="/*...*/" />
-            <marker date="1488764115000" expanded="true" signature="570:869" ph="{...}" />
-            <marker date="1488764115000" expanded="true" signature="580:742" ph="{&quot;method&quot;: 'POST'...}" />
-            <marker date="1488764115000" expanded="true" signature="628:738" ph="{&quot;todoText&quot;: vm.todo.todoText...}" />
-            <marker date="1488764115000" expanded="true" signature="767:864" ph="{...}" />
-            <marker date="1488764115000" expanded="true" signature="772:802" ph="/*...*/" />
-            <marker date="1488764115000" expanded="true" signature="830:856" ph="/*...*/" />
+            <marker date="1488765409000" expanded="true" signature="154:875" ph="{...}" />
+            <marker date="1488765409000" expanded="true" signature="322:391" ph="{...}" />
+            <marker date="1488765409000" expanded="true" signature="338:384" ph="{&quot;todoText&quot;: ''...}" />
+            <marker date="1488765409000" expanded="true" signature="400:545" ph="/*...*/" />
+            <marker date="1488765409000" expanded="true" signature="570:872" ph="{...}" />
+            <marker date="1488765409000" expanded="true" signature="583:745" ph="{&quot;method&quot;: 'POST'...}" />
+            <marker date="1488765409000" expanded="true" signature="631:741" ph="{&quot;todoText&quot;: vm.todo.todoText...}" />
+            <marker date="1488765409000" expanded="true" signature="770:867" ph="{...}" />
+            <marker date="1488765409000" expanded="true" signature="775:805" ph="/*...*/" />
+            <marker date="1488765409000" expanded="true" signature="833:859" ph="/*...*/" />
           </folding>
         </state>
       </provider>

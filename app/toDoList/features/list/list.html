@@ -7,23 +7,39 @@
 
 	<span ng-repeat="data in ListVM.todoData">
 		<ul>
-			<li>
+			<!-- if todo date is before the current date -->
+			<li ng-if="data.completeBy < ListVM.currentDate.toISOString()">
 				{{data.todoText}}
 				{{data.completeBy}}
 			</li>
 		</ul>
-		
+	</span> 
+	
+		<br><br><br>
 
-	</span>
-	<br><br><br>
+		<h4 class="title is-4">Due Today</h4>
+			<hr>
+			<span ng-repeat="data in ListVM.todoData">
+				<ul>
+					<!-- if completeBY date is today NOT WORKING!-->
+					<li ng-if="data.completeBy == ListVM.currentDate.toISOString()">
+						{{data.todoText}}
+						{{data.completeBy}}
+					</li>
+				</ul>
+			</span>
+		<br><br><br>
 
-	<h4 class="title is-4">Due Today</h4>
-	<hr>
-
-	<br><br><br>
-
-	<h4 class="title is-4">Due Later</h4>
-	<hr>
-
+		<h4 class="title is-4">Due Later</h4>
+			<hr>
+			<span ng-repeat="data in ListVM.todoData">
+			<ul>
+				<!-- if completeBY date is in the future -->
+				<li ng-if="data.completeBy > ListVM.currentDate.toISOString()">
+					{{data.todoText}}
+					{{data.completeBy}}
+				</li>
+			</ul>
+			</span>
 </div>
 

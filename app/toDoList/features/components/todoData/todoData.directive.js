@@ -22,7 +22,7 @@ function TodoDataCtrl($http) {
 		method: 'GET',
 		url: '/api/todos'
 	}).then(function(response){
-		console.log(response);
+		/*console.log(response);*/
 	});
 
 }
