@@ -16,6 +16,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 //require routes
 require('./app/routes.js')(app);
 
+
 // Serve static content for the app from the "app" directory
 app.use(express.static(__dirname + "/app"));
 

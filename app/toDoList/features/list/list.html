@@ -1,16 +1,29 @@
+<div layout="column" layout-align="center center" ng-controller="ListCtrl">
 
-<br><br><br>
+	<br><br><br>
+	<todo-data></todo-data>
+	<h4 class="title is-4">Overdue</h4>
+	<hr>
 
-<h4 class="title is-4">Overdue</h4>
-<hr>
+	<span ng-repeat="data in ListVM.todoData">
+		<ul>
+			<li>
+				{{data.todoText}}
+				{{data.completeBy}}
+			</li>
+		</ul>
+		
 
-<br><br><br>
+	</span>
+	<br><br><br>
 
-<h4 class="title is-4">Due Today</h4>
-<hr>
+	<h4 class="title is-4">Due Today</h4>
+	<hr>
 
-<br><br><br>
+	<br><br><br>
 
-<h4 class="title is-4">Due Later</h4>
-<hr>
+	<h4 class="title is-4">Due Later</h4>
+	<hr>
+
+</div>
 

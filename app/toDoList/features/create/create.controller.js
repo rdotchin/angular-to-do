@@ -17,6 +17,7 @@ function CreateCtrl($http){
   	/*This function will run the $http post to send todo data to the server
   	app.post('/api/todo') will use the data to add the todo to mongodb. */
 	vm.addTodo = function(){
+		
 		$http({
 		method: 'POST',
 		url: '/api/todo',

@@ -7,7 +7,8 @@ angular
         'toDoList.create',
         'toDoList.list',
         'toDoList.completed',
-        'toDoList.component.tabs'
+        //components
+        'toDoList.component.tabs',
     ])
     .config(toDoListConfig);
 
