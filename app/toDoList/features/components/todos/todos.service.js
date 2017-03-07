@@ -9,7 +9,7 @@ function TodosService($http) {
 	return {
 
 		/*$http GET to retrieve todo data from mongoDB*/
-		getTodos: function(todos){
+		getContent: function(todos){
 			$http({
 				method: 'GET',
 				url: '/api/todos'
@@ -24,13 +24,25 @@ function TodosService($http) {
 			
 			});
 		},
-
-		pushTodos: function(){
-
+		/*This function will run the $http post to send todo data to the server
+  	app.post('/api/todo') will use the data to add the todo to mongodb. */
+		createContent: function(text, date){
+			$http({
+			method: 'POST',
+			url: '/api/todo',
+			data: {
+				todoText: text, // todo text data vm.todo.todoText
+				completeBy: date // date selected data vm.todo.completeBy
+			}
+			}).then(function(response){
+				console.log('new todo created'); // console.log on success
+			}).catch(function(err){ //catch if an error
+				console.log(err);
+			});
 
 		},
 
-		putTodos: function(){
+		updateContent: function(){
 
 
 		}

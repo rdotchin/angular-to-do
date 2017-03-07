@@ -2,7 +2,7 @@ angular
     .module('toDoList.create') //extending the module from create.module.js
     .controller('CreateCtrl', CreateCtrl);
 
-function CreateCtrl($http){
+function CreateCtrl(todos){
 	var vm = this; // vm stands for View Model - anything on "the vm" is exposed to the view
 
 	//reset the text input and Datepicker 
@@ -13,22 +13,11 @@ function CreateCtrl($http){
   		};	
   	}
 	
-	
-  	/*This function will run the $http post to send todo data to the server
-  	app.post('/api/todo') will use the data to add the todo to mongodb. */
-	vm.addTodo = function(){
-		$http({
-		method: 'POST',
-		url: '/api/todo',
-		data: {
-			todoText: vm.todo.todoText, // todo text data
-			completeBy: vm.todo.completeBy // date selected data
-		}
-		}).then(function(response){
-			console.log('new todo created'); // console.log on success
-			resetView(); //reset text input and Datepicker
-		}).catch(function(err){ //catch if an error
-			console.log(err);
-		});
-	};
+  	//set ng-click to addTodo() then call the create function from todos.service
+  	vm.addTodo = function(){
+  		todos.createContent(vm.todo.todoText, vm.todo.completeBy); // pass in the text and date
+  		resetView(); //reset the input fields
+  	};
+
+
 }

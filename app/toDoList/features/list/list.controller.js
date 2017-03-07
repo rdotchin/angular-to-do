@@ -9,6 +9,6 @@ function ListCtrl(todos){
 
 	/*call the $http GET function from todos.service to get the todos data and 
 	pass them into the vm.todoData array*/
-	todos.getTodos(vm.todoData); 
+	todos.getContent(vm.todoData); 
 
 }

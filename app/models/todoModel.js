@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 //create schema for
 var ToDoSchema = Schema({
     todoText: String,
-    completeBy: Date
+    completeBy: Date,
+    completed: {type: Boolean, default: 0}
 });
 
 // Create the model
