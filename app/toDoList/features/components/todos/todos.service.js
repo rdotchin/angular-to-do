@@ -3,7 +3,8 @@ angular
 	.service('todos', TodosService);
 
 
-
+/*TodosService will provide the $http GET, POST and PUT routes for
+create.controller, list.controller and completed.controller*/
 function TodosService($http) {
 	return {
 
@@ -22,11 +23,18 @@ function TodosService($http) {
 			
 			
 			});
+		},
+
+		pushTodos: function(){
+
+
+		},
+
+		putTodos: function(){
+
+
 		}
-	};
 	
+	}; //End of return	
 
-	
-	
-
-}	
+} //End of TodosServied()	
