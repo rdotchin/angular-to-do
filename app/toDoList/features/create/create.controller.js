@@ -19,5 +19,9 @@ function CreateCtrl(todos){
   		resetView(); //reset the input fields
   	};
 
+  	vm.updateTodo = function(){
+  		todos.updateContent();
+  	};
+
 
 }

@@ -4,45 +4,47 @@
 	<h3 class="title is-4">Overdue</h3>
 	<hr>
 	
-	<span ng-repeat="data in ListVM.todoData">
+	<!-- if completed is not checked (false) show the data -->
+	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
 		<ul>
 			<!-- if todo date is before the current date -->
 			<li ng-if="data.completeBy < ListVM.currentDate.toISOString()">
-				<md-checkbox></md-checkbox>
+				<md-checkbox ng-model="todo.completed"></md-checkbox>
 				{{data.todoText}}
 				{{data.completeBy}}
 			</li>
 		</ul>
 	</span> 
+		
+
+	<h3 class="title is-4">Due Today</h3>
+	<hr>
+
+	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
+		<ul>
+			<!-- if completeBY date is today NOT WORKING!-->
+			
+			<li ng-if="data.completeBy == ListVM.currentDate.toISOString()" >
+				<md-checkbox ng-model="todo.completed"></md-checkbox>
+				{{data.todoText}}
+				{{data.completeBy}}
+			</li>
+		</ul>
+	</span>
 	
-		
 
-		<h3 class="title is-4">Due Today</h3>
-			<hr>
-			<span ng-repeat="data in ListVM.todoData">
-				<ul>
-					<!-- if completeBY date is today NOT WORKING!-->
-					
-					<li ng-if="data.completeBy == ListVM.currentDate.toISOString()">
-						<md-checkbox></md-checkbox>
-						{{data.todoText}}
-						{{data.completeBy}}
-					</li>
-				</ul>
-			</span>
-		
+	<h3 class="title is-4">Due Later</h3>
+	<hr>
 
-		<h3 class="title is-4">Due Later</h3>
-			<hr>
-			<span ng-repeat="data in ListVM.todoData">
-			<ul>
-				<!-- if completeBY date is in the future -->
-				<li ng-if="data.completeBy > ListVM.currentDate.toISOString()">
-					<md-checkbox></md-checkbox>
-					{{data.todoText}}
-					{{data.completeBy}}
-				</li>
-			</ul>
-			</span>
+	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
+	<ul>
+		<!-- if completeBY date is in the future -->
+		<li ng-if="data.completeBy > ListVM.currentDate.toISOString()" >
+			<md-checkbox ng-model="todo.completed"></md-checkbox>
+			{{data.todoText}}
+			{{data.completeBy}}
+		</li>
+	</ul>
+	</span>
 </div>
 

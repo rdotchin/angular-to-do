@@ -42,8 +42,20 @@ function TodosService($http) {
 
 		},
 
-		updateContent: function(){
-
+		updateContent: function(id, bool){
+			$http({
+				method: 'PUT',
+				url: 'api/todo',
+				data: {
+					_id: id,
+					completed: bool//id
+					//completed true or false
+				}
+			}).then(function(){
+				console.log('updated ' + id);
+			}).catch(function(err){
+				console.log(err);
+			});
 
 		}
 	

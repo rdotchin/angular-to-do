@@ -19,6 +19,7 @@ module.exports = function(app){
 
     //UPDATE SAVED TODOS
     app.put('/api/todo', function(req, res){
+        console.log(req.body);
         ToDo.findByIdAndUpdate(req.params.id, req.body, function(err, post){
             if(err) return next(err);
             res.json(post);
