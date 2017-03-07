@@ -19,10 +19,11 @@ module.exports = function(app){
 
     //UPDATE SAVED TODOS
     app.put('/api/todo', function(req, res){
-        console.log(req.body);
-        ToDo.findByIdAndUpdate(req.params.id, req.body, function(err, post){
+        //find todo by req.body._id and update completed to req.body.completed
+        ToDo.findByIdAndUpdate(req.body._id, {completed: req.body.completed}, function(err, post){
             if(err) return next(err);
-            res.json(post);
+            console.log(post);
+            res.send(200);
         });
     });
 
