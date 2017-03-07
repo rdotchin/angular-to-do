@@ -1,4 +1,4 @@
 angular
     .module('toDoList.list', [
-    	'toDoList.component.todoData'
+    	'toDoList.component.todos' //todo text & completedBy data
     ]);

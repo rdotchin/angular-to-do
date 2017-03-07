@@ -1,10 +1,9 @@
-<div layout="column" layout-align="center center" ng-controller="ListCtrl">
+<div layout="column"  ng-controller="ListCtrl">
 
-	<br><br><br>
 	<todo-data></todo-data>
 	<h4 class="title is-4">Overdue</h4>
 	<hr>
-
+	
 	<span ng-repeat="data in ListVM.todoData">
 		<ul>
 			<!-- if todo date is before the current date -->
@@ -15,7 +14,7 @@
 		</ul>
 	</span> 
 	
-		<br><br><br>
+		
 
 		<h4 class="title is-4">Due Today</h4>
 			<hr>
@@ -28,7 +27,7 @@
 					</li>
 				</ul>
 			</span>
-		<br><br><br>
+		
 
 		<h4 class="title is-4">Due Later</h4>
 			<hr>
