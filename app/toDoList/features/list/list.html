@@ -6,10 +6,13 @@
 	
 	<!-- if completed is not checked (false) show the data -->
 	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
-		<ul>
+		<ul class="list">
 			<!-- if todo date is before the current date -->
 			<li ng-if="data.completeBy < ListVM.currentDate.toISOString()">
-				<md-checkbox ng-model="data.completed" ng-click="ListVM.updatedTodo(data._id)"></md-checkbox>
+				<md-checkbox ng-model="data.completed" 
+					     	 ng-click="ListVM.updatedTodo(data._id)"
+						 	 aria-label="todo">
+				</md-checkbox>
 				{{data.todoText}}
 				{{data.completeBy}}
 			</li>
@@ -21,11 +24,14 @@
 	<hr>
 
 	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
-		<ul>
+		<ul class="list">
 			<!-- if completeBY date is today NOT WORKING!-->
 			
 			<li ng-if="data.completeBy == ListVM.currentDate.toISOString()" >
-				<md-checkbox ng-model="data.completed" ng-click="ListVM.updatedTodo(data._id)"></md-checkbox>
+				<md-checkbox ng-model="data.completed" 
+					     	 ng-click="ListVM.updatedTodo(data._id)"
+						 	 aria-label="todo">
+				</md-checkbox>
 				{{data.todoText}}
 				{{data.completeBy}}
 			</li>
@@ -37,10 +43,13 @@
 	<hr>
 
 	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
-	<ul>
+	<ul class="list">
 		<!-- if completeBY date is in the future -->
 		<li ng-if="data.completeBy > ListVM.currentDate.toISOString()" >
-			<md-checkbox ng-model="data.completed" ng-click="ListVM.updatedTodo(data._id)"></md-checkbox>
+			<md-checkbox ng-model="data.completed" 
+					     ng-click="ListVM.updatedTodo(data._id)"
+						 aria-label="todo">
+			</md-checkbox>
 			{{data.todoText}}
 			{{data.completeBy}}
 		</li>

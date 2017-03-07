@@ -11,6 +11,9 @@ function ListCtrl(todos){
 	pass them into the vm.todoData array*/
 	todos.getContent(vm.todoData); 
 
+	/*when checkbox is clicked it will call this function whichcalls
+	the update function in todos.service with the todo _id and true
+	passed in*/
 	vm.updatedTodo = function(id){
 		todos.updateContent(id, true);
 	};

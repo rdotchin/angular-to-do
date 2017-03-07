@@ -48,8 +48,7 @@ function TodosService($http) {
 				url: 'api/todo',
 				data: {
 					_id: id,
-					completed: bool//id
-					//completed true or false
+					completed: bool
 				}
 			}).then(function(){
 				console.log('updated ' + id);

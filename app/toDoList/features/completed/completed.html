@@ -1,11 +1,13 @@
 <h3>Completed</h3>
 	
-<ul ng-repeat="todo in CompletedVM.todoData" ng-if="todo.completed === true">
+<ul class="list" ng-repeat="todo in CompletedVM.todoData" ng-if="todo.completed === true">
 	<!-- set up so only completed todos show here -->
 	<li>
-		<!-- why does this work? -->
 		<!-- ng-model to show box checked if true -->
-		<md-checkbox ng-model="todo.completed" ng-click="CompletedVM.updatedTodo(todo._id)"></md-checkbox> <!-- ng-click="function(id)" -->
+		<md-checkbox ng-model="todo.completed" 
+					 ng-click="CompletedVM.updatedTodo(todo._id)"
+					 aria-label="todo">
+		</md-checkbox> 
 		{{todo.todoText}} - {{todo.completeBy}}
 	</li>
 
