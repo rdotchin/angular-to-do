@@ -11,4 +11,8 @@ function ListCtrl(todos){
 	pass them into the vm.todoData array*/
 	todos.getContent(vm.todoData); 
 
+	vm.updatedTodo = function(id){
+		todos.updateContent(id, true);
+	};
+
 }
