@@ -1,1 +1,11 @@
-Hello World Completed
+<h3>Completed</h3>
+	
+<ul ng-repeat="todo in CompletedVM.todoData">
+	<!-- set up so only completed todos show here -->
+	<li>
+		<!-- research ng-click and ng-checked for this!!!!! -->
+		<md-checkbox></md-checkbox>
+		{{todo.todoText}} - {{todo.completeBy}}
+	</li>
+
+</ul>

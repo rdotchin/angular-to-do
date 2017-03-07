@@ -1,13 +1,14 @@
 <div layout="column"  ng-controller="ListCtrl">
 
 	<todo-data></todo-data>
-	<h4 class="title is-4">Overdue</h4>
+	<h3 class="title is-4">Overdue</h3>
 	<hr>
 	
 	<span ng-repeat="data in ListVM.todoData">
 		<ul>
 			<!-- if todo date is before the current date -->
 			<li ng-if="data.completeBy < ListVM.currentDate.toISOString()">
+				<md-checkbox></md-checkbox>
 				{{data.todoText}}
 				{{data.completeBy}}
 			</li>
@@ -16,12 +17,14 @@
 	
 		
 
-		<h4 class="title is-4">Due Today</h4>
+		<h3 class="title is-4">Due Today</h3>
 			<hr>
 			<span ng-repeat="data in ListVM.todoData">
 				<ul>
 					<!-- if completeBY date is today NOT WORKING!-->
+					
 					<li ng-if="data.completeBy == ListVM.currentDate.toISOString()">
+						<md-checkbox></md-checkbox>
 						{{data.todoText}}
 						{{data.completeBy}}
 					</li>
@@ -29,12 +32,13 @@
 			</span>
 		
 
-		<h4 class="title is-4">Due Later</h4>
+		<h3 class="title is-4">Due Later</h3>
 			<hr>
 			<span ng-repeat="data in ListVM.todoData">
 			<ul>
 				<!-- if completeBY date is in the future -->
 				<li ng-if="data.completeBy > ListVM.currentDate.toISOString()">
+					<md-checkbox></md-checkbox>
 					{{data.todoText}}
 					{{data.completeBy}}
 				</li>
