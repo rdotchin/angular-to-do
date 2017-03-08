@@ -19,6 +19,7 @@ function CreateCtrl(todos){
   		resetView(); //reset the input fields
   	};
 
+    //call the function from todos.service to update the completed boolean
   	vm.updateTodo = function(){
   		todos.updateContent();
   	};

@@ -10,15 +10,15 @@ function TodosService($http) {
 
 		/*$http GET to retrieve todo data from mongoDB*/
 		getContent: function(todos){
+		
 			$http({
 				method: 'GET',
 				url: '/api/todos'
 			}).then(function(response){
 				//loop through the response data
 				response.data.forEach(function(element){
-				//push data into vm.todoData in list.controller
+				//push data into vm.todoData in list.controlr
 				todos.push(element);
-				console.log(todos);
 			});
 			
 			

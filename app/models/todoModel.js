@@ -4,8 +4,10 @@ const Schema = mongoose.Schema;
 
 //create schema for
 var ToDoSchema = Schema({
-    todoText: String,
-    completeBy: Date,
+    todoText: {type: String, 
+    		   required: true},
+    completeBy: {type: Date,
+    			required: true},
     completed: {type: Boolean, default: 0}
 });
 

@@ -1,11 +1,14 @@
-<div layout="column"  ng-controller="ListCtrl">
-
+<div layout="column"  ng-controller="ListCtrl" flex="50">
+	<md-input-container >
+		<label>Search</label>
+		<input type="text" ng-model="search">
+	</md-input-container>
 	<todo-data></todo-data>
 	<h3 class="title is-4">Overdue</h3>
 	<hr>
 	
-	<!-- if completed is not checked (false) show the data -->
-	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
+	<!-- if completed is not checked (false) show the data, set filter to search text input-->
+	<span ng-repeat="data in ListVM.todoData | filter: search" ng-if="data.completed === false">
 		<ul class="list">
 			<!-- if todo date is before the current date -->
 			<li ng-if="data.completeBy < ListVM.currentDate.toISOString()">
@@ -14,7 +17,7 @@
 						 	 aria-label="todo">
 				</md-checkbox>
 				{{data.todoText}}
-				{{data.completeBy}}
+				({{data.completeBy | date: 'MM/dd/yyyy'}})
 			</li>
 		</ul>
 	</span> 
@@ -23,7 +26,7 @@
 	<h3 class="title is-4">Due Today</h3>
 	<hr>
 
-	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
+	<span ng-repeat="data in ListVM.todoData | filter: search" ng-if="data.completed === false">
 		<ul class="list">
 			<!-- if completeBY date is today NOT WORKING!-->
 			
@@ -33,7 +36,7 @@
 						 	 aria-label="todo">
 				</md-checkbox>
 				{{data.todoText}}
-				{{data.completeBy}}
+				({{data.completeBy | date: 'MM/dd/yyyy'}})
 			</li>
 		</ul>
 	</span>
@@ -42,7 +45,7 @@
 	<h3 class="title is-4">Due Later</h3>
 	<hr>
 
-	<span ng-repeat="data in ListVM.todoData" ng-if="data.completed === false">
+	<span ng-repeat="data in ListVM.todoData | filter: search" ng-if="data.completed === false">
 	<ul class="list">
 		<!-- if completeBY date is in the future -->
 		<li ng-if="data.completeBy > ListVM.currentDate.toISOString()" >
@@ -51,7 +54,7 @@
 						 aria-label="todo">
 			</md-checkbox>
 			{{data.todoText}}
-			{{data.completeBy}}
+			({{data.completeBy | date: 'MM/dd/yyyy'}})
 		</li>
 	</ul>
 	</span>
