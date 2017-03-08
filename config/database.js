@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const db = mongoose.connection;
 //connect to mongo database
-mongoose.connect('mongodb://localhost/toDoList');
+mongoose.connect('mongodb://heroku_1gksgkws:vn4vfggf5glsv4qo4gl7jcjv66@ds123400.mlab.com:23400/heroku_1gksgkws');
 
 
 // Require bluebird as promise because mongoose promises are deprecated
