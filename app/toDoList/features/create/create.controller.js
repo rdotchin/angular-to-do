@@ -15,14 +15,8 @@ function CreateCtrl(todos){
 	
   	//set ng-click to addTodo() then call the create function from todos.service
   	vm.addTodo = function(){
-  		todos.createContent(vm.todo.todoText, vm.todo.completeBy); // pass in the text and date
+      // call the create function from todos.service and pass in the new todos text and date
+  		todos.createContent(vm.todo.todoText, vm.todo.completeBy); 
   		resetView(); //reset the input fields
   	};
-
-    //call the function from todos.service to update the completed boolean
-  	vm.updateTodo = function(){
-  		todos.updateContent();
-  	};
-
-
 }

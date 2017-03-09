@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 // Create Schema class
 const Schema = mongoose.Schema;
 
-//create schema for
+//create schema 
 var ToDoSchema = Schema({
     todoText: {type: String, 
     		   required: true},

@@ -1,4 +1,4 @@
 angular
     .module('toDoList.completed', [
-    	'toDoList.component.todos' //todo text & completedBy data
+    	'toDoList.component.todos' //service that contains the function to retrieve todo data
     ]);

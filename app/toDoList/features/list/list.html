@@ -1,62 +1,72 @@
 <div layout="column"  ng-controller="ListCtrl" flex="50">
-	<md-input-container >
+	<h3>Todos:</h3>
+	<md-input-container id="searchInput">
 		<label>Search</label>
-		<input type="text" ng-model="search">
+		<input type="text" ng-model="search" flex="40">
 	</md-input-container>
 	<todo-data></todo-data>
-	<h3 class="title is-4">Overdue</h3>
+	<h3 class="title is-4 todo-title">Overdue:</h3>
 	<hr>
 	
 	<!-- if completed is not checked (false) show the data, set filter to search text input-->
-	<span ng-repeat="data in ListVM.todoData | filter: search" ng-if="data.completed === false">
-		<ul class="list">
-			<!-- if todo date is before the current date -->
-			<li ng-if="data.completeBy < ListVM.currentDate.toISOString()">
+	<span>
+		<ul >
+			<!-- *ng-repeat: loop through ListVM.todoData array and refert to it as data \
+				 *ng-if: display todo if it is not completed (empty checkbox) and the date is
+				  before todays date-->
+			<li class="list" 
+				ng-repeat="data in ListVM.todoData | filter: search" 
+				ng-if="data.completed === false && data.completeBy < ListVM.currentDate.toISOString()">
 				<md-checkbox ng-model="data.completed" 
 					     	 ng-click="ListVM.updatedTodo(data._id)"
 						 	 aria-label="todo">
 				</md-checkbox>
-				{{data.todoText}}
-				({{data.completeBy | date: 'MM/dd/yyyy'}})
+				{{data.todoText}} ({{data.completeBy | date: 'MM/dd/yyyy'}})
 			</li>
 		</ul>
 	</span> 
 		
 
-	<h3 class="title is-4">Due Today</h3>
+	<h3 class="title is-4 todo-title">Due Today:</h3>
 	<hr>
 
-	<span ng-repeat="data in ListVM.todoData | filter: search" ng-if="data.completed === false">
+	<span>
 		<ul class="list">
-			<!-- if completeBY date is today NOT WORKING!-->
-			
-			<li ng-if="data.completeBy == ListVM.currentDate.toISOString()" >
+
+			<!-- *ng-repeat: loop through ListVM.todoData array and refert to it as data \
+				 *ng-if: display todo if it is not completed (empty checkbox) and the date is
+				  equal to todays date-->
+			<li class="list" 
+				ng-repeat="data in ListVM.todoData | filter: search" 
+				ng-if="data.completed === false && data.completeBy == ListVM.currentDate.toISOString()">
 				<md-checkbox ng-model="data.completed" 
 					     	 ng-click="ListVM.updatedTodo(data._id)"
 						 	 aria-label="todo">
 				</md-checkbox>
-				{{data.todoText}}
-				({{data.completeBy | date: 'MM/dd/yyyy'}})
+				{{data.todoText}} ({{data.completeBy | date: 'MM/dd/yyyy'}})
 			</li>
 		</ul>
 	</span>
 	
 
-	<h3 class="title is-4">Due Later</h3>
+	<h3 class="title is-4 todo-title">Due Later</h3>
 	<hr>
 
-	<span ng-repeat="data in ListVM.todoData | filter: search" ng-if="data.completed === false">
-	<ul class="list">
-		<!-- if completeBY date is in the future -->
-		<li ng-if="data.completeBy > ListVM.currentDate.toISOString()" >
-			<md-checkbox ng-model="data.completed" 
-					     ng-click="ListVM.updatedTodo(data._id)"
-						 aria-label="todo">
-			</md-checkbox>
-			{{data.todoText}}
-			({{data.completeBy | date: 'MM/dd/yyyy'}})
-		</li>
-	</ul>
+	<span>
+		<ul class="list">
+			<!-- *ng-repeat: loop through ListVM.todoData array and refert to it as data \
+				 *ng-if: display todo if it is not completed (empty checkbox) and the date is
+				  after todays date-->
+			<li class="list" 
+				ng-repeat="data in ListVM.todoData | filter: search" 
+				ng-if="data.completed === false && data.completeBy > ListVM.currentDate.toISOString()">
+				<md-checkbox ng-model="data.completed" 
+						     ng-click="ListVM.updatedTodo(data._id)"
+							 aria-label="todo">
+				</md-checkbox>
+				{{data.todoText}} ({{data.completeBy | date: 'MM/dd/yyyy'}})
+			</li>
+		</ul>
 	</span>
 </div>
 

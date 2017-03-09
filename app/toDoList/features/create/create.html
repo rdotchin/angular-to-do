@@ -1,26 +1,32 @@
+<!--The user will be able to create their todos on this page by entering the text
+    of the todo and selecting a date for it to be completed by.-->
 
-
-<br><br><br>
-
-<div  layout="column" ng-cloak class="md-inline-form">
-    <div>
-        <h4>Enter a Todo:</h4>
-        <md-input-container>
-            <label>Enter Todo</label>
-            <input name="todoText" type="text" ng-model="CreateVM.todo.todoText">
-        </md-input-container>
+<md-content ng-cloak class="md-inline-form">
+    <div layout-gt-xs="column">
+        <div flex-gt-xs>
+            <h3>Enter a Todo:</h3>
+            <!-- input for todo text -->
+            <md-input-container>
+                <label>Enter Todo</label>
+                <!-- *ng-model: bind the text data of this input to the vm.todo.todoText property on the view model scope -->
+                <input name="todoText" type="text" ng-model="CreateVM.todo.todoText">
+            </md-input-container>
+        </div>
+  
 
     <md-content  layout-padding ng-cloak>
-        <div layout-gt-xs="row">
+        <div layout-gt-xs="column">
             <div flex-gt-xs>
                 <h4>Enter complete by date:</h4>
-                <!-- Datepicker set to  -->
+                <!-- Datepicker for user to select the complete by date for their todo -->
+                <!-- *ng-model: bind the date data of this datepicker to the vm.todo.todoText property on the view model scope -->
                 <md-datepicker ng-model="CreateVM.todo.completeBy" md-placeholder="Enter date"></md-datepicker>
             </div>
         </div>
     </md-content>
     <div>
-
+        <!-- *ng-click: run the addTodo function in the controller which calls the  createContent function in todos.service
+             that will create the new todo in MongoDB-->
         <md-button class="md-raised md-primary" type="button" value="Save" ng-click="CreateVM.addTodo()">Submit</md-button>
       </div>
 

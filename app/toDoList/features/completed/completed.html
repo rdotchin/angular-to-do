@@ -1,13 +1,24 @@
-<h3>Completed</h3>
+<!--Only todos that have completed set to true will show on this page.
+	The todos will have a checked checkbox next to themm when clicked 
+	they will run a function to updated that todo's completed to false.
+	The todo will dissapear from completed.html and show in list.html -->
+
+<h3>Completed:</h3>
 	
-<ul class="list" ng-repeat="todo in CompletedVM.todoData" ng-if="todo.completed === true">
-	<!-- set up so only completed todos show here -->
-	<li>
-		<!-- ng-model to show box checked if true -->
+
+<ul class="list">
+	<!--*ng-repeat: Loop through the todos data
+	*ng-if: if the todo is completed it will show in this view -->	
+	<li ng-repeat="todo in CompletedVM.todoData" 
+		ng-if="todo.completed === true">
+		<!--Click on the checkbox and it will mark the todo as not completed, it will dissapear
+		from the page and wil show on the list.html page 
+      		 *ng-model checkbox will be checked if todo.complete is true 
+			 *ng-click: call the updateTodo function passing in that todos _id-->
 		<md-checkbox ng-model="todo.completed" 
-					 ng-click="CompletedVM.updatedTodo(todo._id)"
-					 aria-label="todo">
-		</md-checkbox> 
+					 ng-click="CompletedVM.updatedTodo(todo._id)" 
+					 aria-label="todo"></md-checkbox> 
+
 		{{todo.todoText}} - {{todo.completeBy}}
 	</li>
 

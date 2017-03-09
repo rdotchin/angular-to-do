@@ -5,10 +5,10 @@ angular
 function createConfig($stateProvider){
     // This will load the state of create since it is a single-page application
     $stateProvider.state({
-        name: 'create',
-        url: '/create',
-        templateUrl: '/toDoList/features/create/create.html',
-        controller: 'CreateCtrl',
-        controllerAs: 'CreateVM'
+        name: 'create', // name of the route
+        url: '/create', // url endpoint for the route
+        templateUrl: '/toDoList/features/create/create.html', // The url to the view template
+        controller: 'CreateCtrl', // The name of the controller to use for this route
+        controllerAs: 'CreateVM' // The namespace for the view to access the view model
     });
 }
